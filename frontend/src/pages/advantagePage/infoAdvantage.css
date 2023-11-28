@@ -1,0 +1,35 @@
+.infoAdvantage {
+    display: flex;
+    padding: 50px 200px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.advantage__container {
+    display: flex;
+    width: 1920px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.advantage__title {
+    color: #2F353F;
+    font-family: Neue Machina, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.advantage__desc {
+    width: 726px;
+
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}

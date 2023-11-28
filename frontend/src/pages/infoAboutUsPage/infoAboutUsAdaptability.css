@@ -1,0 +1,268 @@
+@media screen and (max-width: 1900px) {
+    .info__title text {
+        font-size: 54px;
+    }
+
+    .info__blocks-1,
+    .info__blocks-2,
+    .info__blocks-3 {
+        width: 475px;
+        height: 440px;
+    }
+
+    .info__blocks-4,
+    .info__blocks-5 {
+        width: 715px;
+        height: 440px;
+    }
+
+    .info__blocks-6 {
+        width: 890px;
+        height: 450px;
+    }
+
+    .info__blocks-7 {
+        width: 540px;
+        height: 450px;
+    }
+
+    .info__blocks__text__number-1,
+    .info__blocks__text__number-2,
+    .info__blocks__text__number-5,
+    .info__blocks__text__number-6 {
+        font-size: 34px;
+    }
+
+    .info__blocks__text__title-1,
+    .info__blocks__text__title-2,
+    .info__blocks__text__title-5,
+    .info__blocks__text__title-6 {
+        font-size: 26px;
+        margin-top: 230px;
+    }
+
+    .info__blocks__text__desc-1,
+    .info__blocks__text__desc-2,
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        font-size: 22px;
+
+        margin-top: 290px;
+        max-width: 380px;
+    }
+
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        max-width: 480px;
+    }
+}
+
+@media screen and (max-width: 1730px) {
+    .info__title text {
+        font-size: 48px;
+    }
+
+    .info__blocks-1,
+    .info__blocks-2,
+    .info__blocks-3 {
+        width: 430px;
+        height: 400px;
+    }
+
+    .info__blocks-4,
+    .info__blocks-5 {
+        width: 645px;
+        height: 398px;
+    }
+
+    .info__blocks-6 {
+        width: 795px;
+        height: 412px;
+    }
+
+    .info__blocks-7 {
+        width: 495px;
+        height: 412px;
+    }
+
+    .info__blocks__text__number-1,
+    .info__blocks__text__number-2,
+    .info__blocks__text__number-5,
+    .info__blocks__text__number-6 {
+        font-size: 32px;
+    }
+
+    .info__blocks__text__title-1,
+    .info__blocks__text__title-2,
+    .info__blocks__text__title-5,
+    .info__blocks__text__title-6 {
+        font-size: 24px;
+        margin-top: 200px;
+    }
+
+    .info__blocks__text__desc-1,
+    .info__blocks__text__desc-2,
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        font-size: 20px;
+
+        margin-top: 240px;
+        max-width: 240px;
+    }
+
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .info__container {
+        gap: 70px;
+    }
+
+    .info__title text {
+        font-size: 42px;
+    }
+
+    .info__blocks-1,
+    .info__blocks-2,
+    .info__blocks-3 {
+        width: 320px;
+        height: 294px;
+    }
+
+    .info__blocks-4,
+    .info__blocks-5 {
+        width: 480px;
+        height: 294px;
+    }
+
+    .info__blocks-6 {
+        width: 580px;
+        height: 317px;
+    }
+
+    .info__blocks-7 {
+        width: 380px;
+        height: 317px;
+    }
+
+    .info__blocks__text__number-1,
+    .info__blocks__text__number-2,
+    .info__blocks__text__number-5,
+    .info__blocks__text__number-6 {
+        font-size: 28px;
+    }
+
+    .info__blocks__text__title-1,
+    .info__blocks__text__title-2,
+    .info__blocks__text__title-5,
+    .info__blocks__text__title-6 {
+        font-size: 22px;
+        margin-top: 130px;
+    }
+
+    .info__blocks__text__desc-1,
+    .info__blocks__text__desc-2,
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        font-size: 16px;
+
+        margin-top: 170px;
+        max-width: 200px;
+    }
+
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        max-width: 400px;
+    }
+
+    .info__blocks__text-1,
+    .info__blocks__text-2,
+    .info__blocks__text-5,
+    .info__blocks__text-6 {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .info__container {
+        gap: 60px;
+    }
+
+    .info__title text {
+        font-size: 36px;
+    }
+
+    .info__blocks-1,
+    .info__blocks-2,
+    .info__blocks-5,
+    .info__blocks-6 {
+        border-radius: 30px;
+    }
+
+    .info__blocks-1,
+    .info__blocks-2,
+    .info__blocks-3 {
+        width: 230px;
+        height: 213px;
+    }
+
+    .info__blocks-4,
+    .info__blocks-5 {
+        width: 344px;
+        height: 212px;
+    }
+
+    .info__blocks-6 {
+        width: 430px;
+        height: 216px;
+    }
+
+    .info__blocks-7 {
+        width: 260px;
+        height: 216px;
+    }
+
+    .info__blocks__text__number-1,
+    .info__blocks__text__number-2,
+    .info__blocks__text__number-5,
+    .info__blocks__text__number-6 {
+        font-size: 22px;
+    }
+
+    .info__blocks__text__title-1,
+    .info__blocks__text__title-2,
+    .info__blocks__text__title-5,
+    .info__blocks__text__title-6 {
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    .info__blocks__text__desc-1,
+    .info__blocks__text__desc-2,
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        font-size: 13px;
+
+        margin-top: 130px;
+        max-width: 170px;
+    }
+
+    .info__blocks__text__desc-5,
+    .info__blocks__text__desc-6 {
+        max-width: 320px;
+    }
+
+    .info__blocks__text-1,
+    .info__blocks__text-2,
+    .info__blocks__text-5,
+    .info__blocks__text-6 {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+}

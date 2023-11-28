@@ -1,0 +1,313 @@
+.personal__account {
+    background: url('../../img/images/imgPersonalAccount/PersonalAccountBackground.png'),
+    #1B1B1B repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.personal__account__header {
+    width: initial;
+
+    padding: 19px 30px;
+
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal__account__header__nav {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.personal__account__header__nav a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__header__nav__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(210, 208, 208, 0.76);
+    width: 381px;
+    height: 59px;
+    border-radius: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.personal__account__header__nav__search__text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+input::-webkit-input-placeholder { 
+    color: #FFF;
+}
+
+.personal__account__FL {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.personal__account__FL-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.personal__account__FL-checkbox:checked ~ .personal__account__FL__more__info {
+    display: block;
+}
+
+.personal__account__FL__more__info {
+    position: absolute;
+    margin-top: 263px;
+    right: 20px;
+
+    display: none;
+    width: 335px;
+    height: 177px;
+    border-radius: 20px;
+    border: 1px solid #424242;
+    background: #FFF;
+}
+
+.personal__account__FL__more__info a {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__FL__more__info img {
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+
+.personal__account__FL__more__info nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: 41px;
+}
+
+
+.personal__account__FL text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__info {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.personal__account__info__title {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+
+    padding-top: 68px;
+    padding-bottom: 64px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal__account__info__blocks {
+    display: flex;
+    /*gap: 20px;*/
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal__account__info__blocks text {
+    display: flex;
+    justify-content: center;
+
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; 
+}
+
+.personal__account__info__blocks__text {
+    width: 340px;
+    height: max-content;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+    padding-top: 17px;
+    padding-bottom: 71px;
+}
+
+.personal__account__info__blocks__task {
+    width: initial;
+
+    border-radius: 10px;
+    background: #E3E3E3;
+
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.personal__account__info__blocks__task text {
+    color: #000;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 8px 12px 0 8px;
+    text-align: center
+}
+
+.personal__account__info__blocks__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.personal__account__info__blocks__icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    padding-left: 26px;
+    padding-bottom: 13px;
+    padding-top: 30px;
+}
+
+.personal__account__info__blocks__data {
+    display: inline-flex;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+
+    width: initial;
+    height: 34px;
+
+    border-radius: 5px;
+    background: #EC9488;
+}
+
+.personal__account__info__blocks__data text {
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__info__create__block {
+    /*position: relative;*/
+    /*left: 1670px;*/
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-right: 77px;
+    padding-top: 50px;
+    padding-bottom: 115px;
+}
+
+.personal__account__info__create__block-btn {
+    width: 159px;
+    height: 56px;
+    border-radius: 15px;
+    background: #2E2BD0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal__account__info__create__block-btn a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer__block__links text {
+    color: #56CCF2;
+    font-family: Neue Machina, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.footer__block__links a {
+    color: #F2F2F2;
+    font-family: Gilroy, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.personal__account__footer__block__link__gmail {
+    color: #FFF;
+    font-family: Gilroy, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    text-decoration-line: underline;
+}
+
+.personal__account__footnote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal__account__footnote text {
+    color: #FFF;
+    font-family: Gilroy, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

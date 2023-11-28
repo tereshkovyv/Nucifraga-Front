@@ -1,0 +1,232 @@
+.create__task {
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+
+    margin: 19px 223px 82px;
+}
+
+.create__task__header {
+    padding-bottom: 30px;
+    padding-left: 51px;
+    padding-top: 30px;
+    display: flex;
+    gap: 51px;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+}
+
+.create__task__header label {
+    color: #7F7F7F;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__enter__name {
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+    height: 72px;
+
+    width: 100%;
+}
+
+.create__task__enter__name input{
+    color: black;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 24px 48px;
+
+    width: inherit;
+}
+
+.create__task__enter__name input::-webkit-input-placeholder,
+.create__task__enter__description textarea::-webkit-input-placeholder
+{
+    color: #7F7F7F;
+    font-family: Neue Machina, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__enter__description {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+    height: 453px;
+
+    width: inherit;
+}
+
+.create__task__enter__description textarea {
+    color: black;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 24px 48px;
+
+    width: inherit;
+    height: inherit;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.create__task__attach__file {
+    padding-bottom: 20px;
+    padding-left: 48px;
+}
+
+.create__task__attach__file label {
+    display: flex;
+    gap: 10px;
+}
+
+.create__task__attach__file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.create__task__attach__file span {
+    color: #7F7F7F;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__order__description {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.create__task__responsible,
+.create__task__deadline,
+.create__task__price {
+    background: #D4D4D4;
+    height: 86px;
+}
+
+.create__task__responsible,
+.create__task__deadline {
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+}
+
+.create__task__order__description text {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__responsible__description,
+.create__task__deadline__description,
+.create__task__price__description {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    padding-top: 30px;
+}
+
+.create__task__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 900px 48px 48px;
+}
+
+.create__task__footer__send-btn {
+    width: 187px;
+    height: 60px;
+    border-radius: 25px;
+    background: #2E2BD0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create__task__footer__send-btn text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__footer__approve-btn {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__price__input {
+    width: 204px;
+    height: 59px;
+    border-radius: 10px;
+    border: 1px solid rgba(133, 133, 133, 0.76);
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create__task__price__input input {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__deadline__input {
+    width: 204px;
+    height: 59px;
+    border-radius: 10px;
+    border: 1px solid rgba(133, 133, 133, 0.76);
+    background: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create__task__deadline__input {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

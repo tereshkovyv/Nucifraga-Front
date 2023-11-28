@@ -1,0 +1,114 @@
+@media screen and (max-width: 1900px) {
+    .header__nav {
+        font-size: 22px;
+    }
+
+    .container__main__screen {
+        padding: 28px;
+    }
+
+    .motto {
+        width: 800px;
+    }
+
+    .start__work {
+        height: 260px;
+        width: 260px;
+    }
+
+    .start__work a {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1730px) {
+    .header__nav {
+        font-size: 20px;
+    }
+
+    .container__main__screen {
+        padding: 26px;
+    }
+
+    .motto {
+        width: 600px;
+    }
+
+    .start__work {
+        height: 240px;
+        width: 240px;
+    }
+
+    .start__work a {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .header__nav {
+        font-size: 18px;
+    }
+
+    .container__main__screen {
+        padding: 24px;
+    }
+
+    .motto {
+        width: 550px;
+    }
+
+    .start__work {
+        height: 220px;
+        width: 220px;
+    }
+
+    .start__work a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .header__nav {
+        font-size: 16px;
+    }
+
+    .container__main__screen {
+        padding: 22px;
+    }
+
+    .motto {
+        width: 450px;
+    }
+
+    .start__work {
+        height: 200px;
+        width: 200px;
+    }
+
+    .start__work a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header__nav {
+        font-size: 14px;
+    }
+
+    .container__main__screen {
+        padding: 20px;
+    }
+
+    .motto {
+        width: 300px;
+    }
+
+    .start__work {
+        height: 180px;
+        width: 180px;
+    }
+
+    .start__work a {
+        font-size: 20px;
+    }
+}

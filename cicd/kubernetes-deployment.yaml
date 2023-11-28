@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nucifraga-application-front
+  namespace: nucifraga
+  labels:
+    app: nucifraga-application-front
+    env: Production
+    owner: men-moment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      project: nucifraga-application-front
+  template:
+    metadata:
+      labels:
+        project: nucifraga-application-front
+    spec:
+      containers:
+        - name: nucifraga-application-front
+          image: hub.66bit.ru/urfu-2023-fiit/men-moment/clientsaccountfront:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: nucifraga-secret
+
