@@ -1,0 +1,433 @@
+.list__projects {
+    background: url('../../../public/img/images/imgPersonalAccount/PersonalAccountBackground.png'),
+    #1B1B1B repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.personal__account__header {
+    width: initial;
+
+    padding: 19px 30px;
+
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal__account__header__nav {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.personal__account__header__nav a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__header__nav__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(210, 208, 208, 0.76);
+    width: 381px;
+    height: 59px;
+    border-radius: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.personal__account__header__nav__search__text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+input::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+.personal__account__FL {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.personal__account__FL-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.personal__account__FL-checkbox:checked ~ .personal__account__FL__more__info {
+    display: block;
+}
+
+.personal__account__FL__more__info {
+    position: absolute;
+    margin-top: 263px;
+    right: 20px;
+
+    display: none;
+    width: 335px;
+    height: 177px;
+    border-radius: 20px;
+    border: 1px solid #424242;
+    background: #FFF;
+}
+
+.personal__account__FL__more__info a {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__FL__more__info img {
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+
+.personal__account__FL__more__info nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: 41px;
+}
+
+.navigation__panel {
+    position: absolute;
+    width: 68px;
+    height: 300px;
+
+    border-radius: 15px;
+    background: #FFF;
+
+    margin-left: 37px;
+    margin-top: 19px;
+}
+
+.navigation__panel nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding: 12px;
+}
+
+.navigation__panel img {
+    width: 35px;
+}
+
+.nav__list__projects {
+    display: flex;
+    padding: 73px 435px 58px 172px;
+}
+
+.nav__list__projects text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.create__task-btn {
+    width: 159px;
+    height: 56px;
+    border-radius: 15px;
+    background: #2E2BD0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create__task-btn a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav__list__projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list__projects__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 973px;
+    height: 56px;
+    border-radius: 15px;
+    background: #FFF;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__list__projects__search__text {
+    width: inherit;
+    padding-right: 20px;
+
+    color: black;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav__list__projects__search input::-webkit-input-placeholder {
+    color: #747474;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list__projects__block {
+    width: 1474px;
+    height: auto;
+    border-radius: 25px;
+    background: #FFF;
+
+    margin-left: 252px;
+    margin-right: 194px;
+    margin-bottom: 92px;
+}
+
+.list__projects__block table {
+    width: inherit;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+th {
+    padding: 34px 48px 29px;
+    vertical-align: center;
+    text-align: left;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+}
+
+td {
+    padding: 29px 48px 29px;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.76);
+}
+
+td text {
+    color: #524E4E;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list__projects__block__name {
+    display: flex;
+    gap: 9px;
+}
+
+.list__projects__block thead text {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list__projects__block__FL {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.list__projects__block__FL-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.list__projects__block__users__info {
+    position: absolute;
+    margin-top: 173px;
+    right: 950px;
+
+    display: none;
+    width: 290px;
+    height: 139px;
+    border-radius: 10px;
+    border: 1px solid #747474;
+    background: #FFF;
+}
+
+.list__projects__block__FL-checkbox:checked ~ #list__projects__block__FL__users_info > div {
+    display: block;
+}
+
+#list__projects__block__FL__users_info > div {
+    position: absolute;
+    margin-top: 18px;
+    right: 950px;
+
+    display: none;
+    width: 290px;
+    height: 139px;
+    border-radius: 10px;
+    border: 1px solid #747474;
+    background: white;
+}
+
+.list__projects__block__users__info__header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #747474;
+}
+
+.list__projects__block__users__info__header text {
+    color: #747474;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list__projects__block__all__users {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list__projects__block__all__users text {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    cursor: pointer;
+}
+
+.list__projects__block__users__info__header text:active {
+    color: #0b76ef;
+    transform: translate(0.1em, 0.1em);
+}
+
+.list__projects__block__footer {
+    display: flex;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.list__projects__block__footer text {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.list__projects__block__footer__noted {
+    padding-right: 64px;
+}
+
+.list__projects__block__footer__pages {
+    padding-left: 202px;
+    padding-right: 42px;
+}
+
+.list__projects__block__footer__pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.list__projects__block__footer__pagination label {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.list__projects__block__footnote {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    padding-left: 49px;
+    padding-bottom: 28px;
+}
+
+.list__projects__block__footnote__open-btn {
+    width: 100px;
+    height: 27px;
+}
+
+.list__projects__block__footnote__edit-btn {
+    width: 141px;
+    height: 27px;
+}
+
+.list__projects__block__footnote__delete-btn {
+    width: 85px;
+    height: 26px;
+}
+
+.list__projects__block__footnote__open-btn,
+.list__projects__block__footnote__edit-btn,
+.list__projects__block__footnote__delete-btn {
+    border-radius: 10px;
+    background: #4200FF;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__projects__block__footnote__open-btn a,
+.list__projects__block__footnote__delete-btn a,
+.list__projects__block__footnote__edit-btn a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

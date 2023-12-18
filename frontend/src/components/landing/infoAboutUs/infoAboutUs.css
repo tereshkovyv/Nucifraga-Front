@@ -1,0 +1,138 @@
+.infoAboutUs {
+    display: flex;
+    padding: 100px 150px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.info__title {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__title text {
+    color: black;
+    font-family: Neue Machina, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+.info__blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.info__blocks-1,
+.info__blocks-2,
+.info__blocks-5,
+.info__blocks-6 {
+    border-radius: 70px;
+    border: 1px solid #95989D;
+}
+
+.info__blocks-1,
+.info__blocks-2,
+.info__blocks-3 {
+    width: 534px;
+    height: 494px;
+}
+
+.info__blocks-4,
+.info__blocks-5 {
+    width: 801px;
+    height: 494px;
+}
+
+.info__blocks-6 {
+    width: 1010px;
+    height: 500px;
+}
+
+.info__blocks-7 {
+    width: 593px;
+    height: 500px;
+}
+
+.info__blocks__text__number-1,
+.info__blocks__text__number-2,
+.info__blocks__text__number-5,
+.info__blocks__text__number-6 {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info__blocks__text-1,
+.info__blocks__text-2,
+.info__blocks__text-5,
+.info__blocks__text-6 {
+    margin: 50px;
+    width: 435px;
+    height: 395px;
+    word-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info__blocks__text-5 {
+    width: 705px;
+    height: 395px;
+}
+
+.info__blocks__text-6 {
+    width: 915px;
+    height: 395px;
+}
+
+.info__blocks__text__title-1,
+.info__blocks__text__title-2,
+.info__blocks__text__title-5,
+.info__blocks__text__title-6 {
+    color: #2F353F;
+    font-family: Neue Machina, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin-top: 200px;
+}
+
+.info__blocks__text__desc-1,
+.info__blocks__text__desc-2,
+.info__blocks__text__desc-5,
+.info__blocks__text__desc-6 {
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin-top: 25px;
+}
+
+.info__blocks__text__desc-5,
+.info__blocks__text__desc-6 {
+    /*max-width: 800px;*/
+}

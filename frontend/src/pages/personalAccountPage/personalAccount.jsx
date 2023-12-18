@@ -1,53 +1,81 @@
 import './personalAccount.css';
-import footerLogo from "../../img/images/imgPersonalAccount/LogoWhite.svg";
-import logoImg from "../../img/images/icons/Logo.svg";
-import iconPerson from "../../img/images/imgPersonalAccount/iconPerson.svg";
-import searchImg from "../../img/images/imgPersonalAccount/search.svg";
-import pointerBlackImg from "../../img/images/imgPersonalAccount/pointerBlack.png";
-import iconPersonMiniImg from "../../img/images/imgPersonalAccount/icoUserMini.png";
-import timeIconImg from "../../img/images/imgPersonalAccount/timeIcon.png";
-import pointerWhiteImg from "../../img/images/imgPersonalAccount/pointerWhite.svg";
 import React, {useEffect, useState} from "react";
-import authService from "../../components/api-authorization/AuthorizeService";
+
+const footerLogo = "img/images/imgPersonalAccount/LogoWhite.svg";
+const logoImg = "img/images/icons/Logo.svg";
+const iconPerson = "img/images/imgPersonalAccount/iconPerson.svg";
+const searchImg = "img/images/imgPersonalAccount/search.svg";
+const pointerBlackImg = "img/images/imgPersonalAccount/pointerBlack.png";
+const iconPersonMiniImg = "img/images/imgPersonalAccount/icoUserMini.png";
+const timeIconImg = "img/images/imgPersonalAccount/timeIcon.png";
+const pointerWhiteImg = "img/images/imgPersonalAccount/pointerWhite.svg";
 
 const PersonalAccount = () => {
-    const [boards, setBoards] = useState([]);
+
+    const [boards, setBoards] = useState([
+        { id: 1, title:"Идеи", items: [{id: 1, title: "Изучить технологию изготовления asdjhfaswojdfo " +
+                    "askdjfokasjdfoj asodfjopias fojasn dfojpasdnofj nasjdf nsadj asldmnalk nsdl;kfnlkmasnd " +
+                    "l;fasdnlkf masn;dfnkjla sdnbf asndfkjl", data: "8 jun" }]},
+        { id: 2, title:"Нужно сделать", items: [{id: 2, title: "Изучить технологию изготовления", data: "1 jun" }]},
+        { id: 3, title:"Делается", items: [{id: 3, title: "Изучить технологию изготовления", data: "1 jun" }]},
+        { id: 4, title:"Сделано", items: [{id: 4, title: "фыв", data: "9 jun" }, {id: 5, title: "фыasdasd", data: "1 jun" }]},
+        { id: 5, title:"Просрочено", items: [
+                {id: 6, title: "1", data: "27 jun" },
+                {id: 7, title: "2", data: "27 jun" },
+                {id: 8, title: "3", data: "27 jun" },
+                {id: 9, title: "4", data: "27 jun" },
+                {id: 10, title: "5", data: "27 jun" },
+                {id: 11, title: "6", data: "27 jun" }
+            ]}
+    ]);
+
     const [currentBoard, setCurrentBoard] = useState(null);
     const [currentItem, setCurrentItem] = useState(null);
 
-    async function getTasks() {
-        const board = [
-            { id: 0, title:"Идеи", items: []},
-            { id: 1, title:"Нужно сделать", items: []},
-            { id: 2, title:"Делается", items: []},
-            { id: 3, title:"Сделано", items: []},
-            { id: 4, title:"Просрочено", items: []}];
-        //const token = await authService.getAccessToken();
-        const response = await fetch('api/tasks',
-                {method:'GET'})
-                            .then(response => response.json())
-                            .then(data => {
-                                data.forEach(task => {
-                                    board[task.status].items.push(task);
-                                })
-                            });
-        setBoards(board);
-    }
-    async function updateTask(task){
-        const response = await fetch(`api/tasks`, {
-            method: 'PUT',
-            body: JSON.stringify(task),
-            headers: {
-            "Content-type": "application/json"
+    const [currentPages, setCurrentPages] = useState([
+        {id: 1, currentBlock: 1},
+        {id: 2, currentBlock: 1},
+        {id: 3, currentBlock: 1},
+        {id: 4, currentBlock: 1},
+        {id: 5, currentBlock: 1}
+    ]);
+
+
+    const [taskPerPages] = useState(3);
+
+    let lastTasksIndexes = [
+        {id: 1, lastTaskIndex: 0 },
+        {id: 2, lastTaskIndex: 0 },
+        {id: 3, lastTaskIndex: 0 },
+        {id: 4, lastTaskIndex: 0 },
+        {id: 5, lastTaskIndex: 0 }
+    ];
+
+    currentPages.forEach((currentPage) =>
+        lastTasksIndexes[currentPage.id - 1].lastTaskIndex = currentPage.currentBlock * taskPerPages
+    );
+
+    let firstTasksIndexes = [
+        {id: 1, firstTaskIndex: lastTasksIndexes[0].lastTaskIndex - taskPerPages },
+        {id: 2, firstTaskIndex: lastTasksIndexes[1].lastTaskIndex - taskPerPages },
+        {id: 3, firstTaskIndex: lastTasksIndexes[2].lastTaskIndex - taskPerPages },
+        {id: 4, firstTaskIndex: lastTasksIndexes[3].lastTaskIndex - taskPerPages },
+        {id: 5, firstTaskIndex: lastTasksIndexes[4].lastTaskIndex - taskPerPages }
+    ];
+
+    function getChangeList(pageNumber, id) {
+        let tempCurrentPages = currentPages.slice(0);
+
+        tempCurrentPages.forEach((currentPage) => {
+            if (currentPage.id === id) {
+                tempCurrentPages[currentPage.id - 1].currentBlock = pageNumber[0];
             }
         })
-        .then(response => response.json())
-            .then(data => console.log(data));
+
+        return tempCurrentPages;
     }
 
-    useEffect(() => {
-        getTasks();
-    }, []);
+    const paginate = (pageNumber, id) => setCurrentPages(getChangeList(pageNumber, id));
 
     function dragOverHandler(e) {
         e.preventDefault();
@@ -65,8 +93,6 @@ const PersonalAccount = () => {
     function dragEndHandler(e) { }
 
     function dragHandler(e, board, item) {
-        item.status = board.id;
-        updateTask(item).then();
         e.preventDefault();
         e.stopPropagation();
         const currentIndex = currentBoard.items.indexOf(currentItem);
@@ -87,6 +113,7 @@ const PersonalAccount = () => {
     }
     function dropCardHandler(e, board) {
         board.items.push(currentItem);
+        currentItem.status = board.id;
         const currentIndex = currentBoard.items.indexOf(currentItem);
         currentBoard.items.splice(currentIndex, 1);
 
@@ -99,6 +126,22 @@ const PersonalAccount = () => {
             }
             return b;
         }))
+    }
+
+    function getTaskPerBlock (board) {
+        return board.items.slice(
+            firstTasksIndexes[board.id - 1].firstTaskIndex,
+            lastTasksIndexes[board.id - 1].lastTaskIndex);
+    }
+
+    function getPagination(taskPerPages, totalItems) {
+        const pageNumbers = [];
+
+        for (let i = 1; i <= Math.ceil(totalItems / taskPerPages); i++) {
+            pageNumbers.push([i]);
+        }
+
+        return pageNumbers;
     }
 
     return (
@@ -151,26 +194,24 @@ const PersonalAccount = () => {
                     КАНБАН ДОСКА
                 </div>
                 <div className={"personal__account__info__blocks"}>
-                    {boards?.map((board) => (
-                        <div
-                            onDragOver={(e) => dragOverHandler(e)}
+                    {boards.map((board) => (
+                        <div onDragOver={(e) => dragOverHandler(e)}
                             onDrop={(e) => dropCardHandler(e, board)}
-                            className={"personal__account__info__blocks__text"}
-                            key={board.id}>
+                            className={"personal__account__info__blocks__text"}>
+
                             <text>
                                 {board.title}
                             </text>
-                            {board?.items.map((item) => (
-                                <div
-                                    onDragOver={(e) => dragOverHandler(e)}
+
+                            {getTaskPerBlock(board).map((item) => (
+                                <div onDragOver={(e) => dragOverHandler(e)}
                                     onDragLeave={(e) => dragLeaveHandler(e)}
                                     onDragStart={(e) => dragStartHandler(e, board, item)}
                                     onDragEnd={(e) => dragEndHandler(e)}
                                     onDrop={(e) => dragHandler(e, board, item)}
-
                                     draggable={"true"}
-                                    className={"personal__account__info__blocks__task"}
-                                    key={item.id}>
+                                    className={"personal__account__info__blocks__task"}>
+
                                     <text>
                                         {item.name}
                                     </text>
@@ -190,6 +231,13 @@ const PersonalAccount = () => {
                                     </div>
                                 </div>
                             ))}
+                            <div className={"pagination"}>
+                                {getPagination(taskPerPages, board.items.length).map((number) =>
+                                    <div>
+                                        <label onClick={() => paginate(number, board.id)} >{number}</label>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -214,12 +262,8 @@ const PersonalAccount = () => {
                         <text>
                             Ссылки
                         </text>
-                        <a href={"#!"}>Ссылочка 1</a>
-                        <a href={"#!"}>Ссылочка 2</a>
-                        <a href={"#!"}>Ссылочка 3</a>
-                        <a href={"#!"}>Ссылочка 4</a>
-                        <a href={"#!"}>Ссылочка 5</a>
-                        <a href={"#!"}>Ссылочка 6</a>
+                        <a href={"/listProjects"}>Список проектов</a>
+                        <a href={"#mainPage"}>О нас</a>
                     </div>
                 </div>
             </section>

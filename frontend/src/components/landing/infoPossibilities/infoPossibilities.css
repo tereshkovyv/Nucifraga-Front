@@ -1,0 +1,162 @@
+.infoPossibilities {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px 200px;
+}
+
+.possibilities__container {
+    display: flex;
+    width: 1920px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.possibilities__title {
+    color: #2F353F;
+    font-family: Neue Machina, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.possibilities__blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.possibilities__start__block {
+    width: 440px;
+    height: 220px;
+
+    padding: 70px 70px 140px 0;
+}
+
+.possibilities__start__block text {
+    color: #2F353F;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Neue Machina, serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    display: flex;
+    width: 400px;
+}
+
+.possibilities__blocks-1,
+.possibilities__blocks-2,
+.possibilities__blocks-3,
+.possibilities__blocks-4 {
+    width: 482px;
+    height: 220px;
+
+    border-radius: 40px;
+    border: 1px solid rgba(47, 53, 63, 0.50);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.possibilities__end__block {
+    width: 522px;
+    height: 300px;
+
+    border-radius: 40px;
+    background: linear-gradient(87deg, #2E2BD0 -68.23%, #7876F2 165.71%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.possibilities__blocks__title-1,
+.possibilities__blocks__title-2,
+.possibilities__blocks__title-3,
+.possibilities__blocks__title-4 {
+    color: #2F353F;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Neue Machina, serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin: 50px 50px 0;
+}
+
+.possibilities__end__block__title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Neue Machina, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin: 50px 45px 0 50px;
+}
+
+.possibilities__blocks__text-1,
+.possibilities__blocks__text-2,
+.possibilities__blocks__text-3,
+.possibilities__blocks__text-4 {
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin: 25px 50px 34px;
+}
+
+.possibilities__end__block__text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Gilroy, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin: 25px 130px 75px 50px;
+}
+
+.get__info {
+    position: relative;
+    left: 0;
+    top: -100px;
+    list-style: none;
+    width: 280px;
+    height: 280px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.get__info-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.get__info a {
+    width: 160px;
+
+    color: #2F353F;
+    text-align: center;
+    font-family: Neue Machina, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+}
