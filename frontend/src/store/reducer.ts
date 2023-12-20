@@ -1,7 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
 import { ProjectProps, TaskProps } from '../type/type';
-import { getProjects as setProjects, getTasks as setTasks, getTask as setTask } from './action';
-import { tasks } from '../mock/task';
+import { setProjects, setTasks, setTask } from './action';
 
 type InitialState = {
     projects: ProjectProps[];
@@ -9,23 +8,23 @@ type InitialState = {
     openedTask: TaskProps | null;
 }
 
-const initialState : InitialState = {
+const initialState: InitialState = {
     projects: [],
-    tasks: tasks,
+    tasks: [],
     openedTask: null
 };
 
 const reducer = createReducer(initialState, (builder) => {
-   builder.addCase(setTasks, (state, action) => {
-       state.tasks = action.payload;
-     })
-     .addCase(setProjects, (state, action) =>
-     {
-        state.projects = action.payload;
-     })
-     .addCase(setTask, (state, action) =>{
-        state.openedTask = action.payload;
-     })
+    builder.addCase(setTasks, (state, action) => {
+        console.log(action.payload);
+        state.tasks = action.payload;
+    })
+        .addCase(setProjects, (state, action) => {
+            state.projects = action.payload;
+        })
+        .addCase(setTask, (state, action) => {
+            state.openedTask = action.payload;
+        })
 });
 
 export { reducer };

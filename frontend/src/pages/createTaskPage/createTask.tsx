@@ -1,10 +1,11 @@
 import '../personalAccountPage/personalAccount.css';
-import '../../components/landing/footer/footer.css';
-import '../../components/landing/footnote/footnote.css';
+import '../../components/footer/footer.css';
+import '../../components/footnote/footnote.css';
 import './createTask.css';
 import { Header } from '../../components/header/header';
+import { InfoFootnote } from '../../components/footnote/infoFootnote';
+import {Footer} from '../../components/footer/footer';
 
-const footerLogo = "img/images/imgPersonalAccount/LogoWhite.svg";
 const clipImg = "img/images/ImgCreateTask/clip.svg";
 const rubleImg = "img/images/ImgCreateTask/ruble.svg";
 
@@ -91,40 +92,8 @@ export function CreateTask(){
                     </a>
                 </div>
             </div>
-
-            <section className={"infoFooter"}>
-                <div className={"footer__container"}>
-                    <div className={"footer__block"}>
-                        <img src={footerLogo} alt={"FooterLogo"} />
-                        <div className={"footer__block__links__mail"}>
-                            <a className={"personal__account__footer__block__link__gmail"} href={"#!"}>nucifraga@gmail.com</a>
-                            <a className={"footer__block__link__connect"} href={"#!"}>Связаться</a>
-                        </div>
-                    </div>
-                    <div className={"footer__block__links"}>
-                        <text>
-                            Ссылки
-                        </text>
-                        <a href={"/listProjects"}>Список проектов</a>
-                        <a href={"#mainPage"}>О нас</a>
-                    </div>
-                </div>
-            </section>
-
-            <section className={"infoFootnote"}>
-                <div className={"personal__account__footnote"}>
-                    <text>
-                        Разработанно NuciFraga
-                    </text>
-                    <text>
-                        Политика конфиденциальности
-                    </text>
-                    <text>
-                        © 2023 IT  NuciFraga
-                    </text>
-                </div>
-            </section>
-
+            <Footer />
+            <InfoFootnote />            
         </section>
     );
 }

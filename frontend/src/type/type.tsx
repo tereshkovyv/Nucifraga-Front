@@ -1,9 +1,16 @@
 export type TaskProps = {
-    id: string;
-    title: string;
+    id: number;
+    name: string;
+    projectId: number;
+    contractorId: string;
+    consumerId: null;
     description: string;
-    deadline: string;
     price: number;
+    customerConfirmed: null;
+    contractorConfirmed: null;
+    startTimePoint: null;
+    time: null;
+    status: number;
 }
 
 export type ProjectProps = {
@@ -12,6 +19,12 @@ export type ProjectProps = {
     role: string;
     tags: string;
     Name: UserProps[];
+}
+
+export type Board = {
+    id: number;
+    title: string;
+    items:  TaskProps[];
 }
 
 export type UserProps = {

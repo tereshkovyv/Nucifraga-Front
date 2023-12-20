@@ -1,12 +1,10 @@
 import './footer.css'
-
 const footerLogo = 'img/images/ImgFooter/FooterLogo.svg'
 
-const Footer = () => {
+export function Footer(){
     return (
         <section className={"infoFooter"}>
             <div className={"footer__container"}>
-
                 <div>
                     <div className={"footer__block"}>
                         <img src={footerLogo} alt={"FooterLogo"} />
@@ -31,5 +29,3 @@ const Footer = () => {
         </section>
     );
 }
-
-export default Footer;

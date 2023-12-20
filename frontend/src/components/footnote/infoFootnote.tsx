@@ -1,6 +1,6 @@
 import './footnote.css'
 
-const Footnote = () => {
+export function InfoFootnote() {
     return (
         <section className={"infoFootnote"}>
             <div className={"footnote"}>
@@ -17,5 +17,3 @@ const Footnote = () => {
         </section>
     );
 }
-
-export default Footnote;

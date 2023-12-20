@@ -4,8 +4,8 @@ import InfoAboutUs from "../../components/landing/infoAboutUs/InfoAboutUs";
 import InfoAdvantage from "../../components/landing/infoAdvantage/infoAdvantage";
 import InfoPossibilities from "../../components/landing/infoPossibilities/infoPossibilities";
 import NewsAboutUs from "../../components/landing/newsAboutUs/newsAboutUs";
-import Footer from "../../components/landing/footer/footer";
-import Footnote from "../../components/landing/footnote/footnote";
+import {Footer} from "../../components/footer/footer";
+import { InfoFootnote } from "../../components/footnote/infoFootnote";
 
 export function Landing(): JSX.Element {
     return (
@@ -16,7 +16,7 @@ export function Landing(): JSX.Element {
             <InfoPossibilities />
             <NewsAboutUs />
             <Footer />
-            <Footnote />
+            <InfoFootnote />
         </Fragment>
     )
 }

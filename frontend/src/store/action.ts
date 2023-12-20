@@ -2,11 +2,11 @@ import {createAction} from '@reduxjs/toolkit';
 import { ProjectProps, TaskProps } from '../type/type';
 
 enum Action{
-    getTasks = 'get/tasks',
-    getProjects = 'get/projects',
-    getTask = 'get/Task'
+    setTasks = 'set/tasks',
+    setProjects = 'set/projects',
+    setTask = 'set/Task'
 }
 
-export const getTasks = createAction<TaskProps[]>(Action.getTasks);
-export const getTask = createAction<TaskProps>(Action.getTask);
-export const getProjects = createAction<ProjectProps[]>(Action.getProjects);
+export const setTasks = createAction<TaskProps[]>(Action.setTasks);
+export const setTask = createAction<TaskProps>(Action.setTask);
+export const setProjects = createAction<ProjectProps[]>(Action.setProjects);
