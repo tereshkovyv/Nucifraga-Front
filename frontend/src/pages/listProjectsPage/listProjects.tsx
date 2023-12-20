@@ -3,12 +3,9 @@ import React from 'react';
 import { useState } from 'react';
 import '../../components/landing/footer/footer.css';
 import '../../components/landing/footnote/footnote.css';
+import { Header } from '../../components/header/header';
 
-const logoImg = "img/images/icons/Logo.svg";
-const searchImg = "img/images/imgPersonalAccount/search.svg";
 const searchIconBlack = "img/images/imgListProjects/searchIcons.svg";
-const iconPerson = "img/images/imgPersonalAccount/iconPerson.svg";
-const pointerWhiteImg = "img/images/imgPersonalAccount/pointerWhite.svg";
 const footerLogo = "img/images/imgPersonalAccount/LogoWhite.svg";
 const clipboardIcon = "img/images/imgListProjects/clipboardIcon.svg";
 const invoiceTransactionIcon = "img/images/imgListProjects/invoiceTransactionIcon.svg";
@@ -50,49 +47,7 @@ const ListProjects = () => {
 
     return (
         <section className={"list__projects"}>
-            <div className={"personal__account__header"}>
-                <div>
-                    <img src={logoImg} alt="Logo"/>
-                </div>
-                <nav className={"personal__account__header__nav"}>
-                    <div className={"personal__account__header__nav__search"}>
-                        <input className={"personal__account__header__nav__search__text"}
-                               placeholder="Поиск по сайту"/>
-                        <a href={"#!"}>
-                            <img src={searchImg} alt={"Search"}/>
-                        </a>
-                    </div>
-                    <li>
-                        <a href="#!">Личный кабинет</a>
-                    </li>
-                    <div className={"personal__account__FL"}>
-                        <input type={"checkbox"} className={"personal__account__FL-checkbox"}
-                               id={"personal__account__FL__checkbox"}/>
-
-                        <label htmlFor={"personal__account__FL__checkbox"}>
-                            <img src={iconPerson} alt="iconPerson"/>
-                        </label>
-
-                        <div className={"personal__account__FL__more__info"}>
-                            <img src={pointerWhiteImg} alt={"pointerWhiteImg"}/>
-                            <nav>
-                                <div>
-                                    <a href="#!">Профиль</a>
-                                </div>
-                                <div>
-                                    <a href="#!">Уведомление</a>
-                                </div>
-                                <div>
-                                    <a href="#!">Выйти</a>
-                                </div>
-                            </nav>
-                        </div>
-                        <text>
-                            Сапкалова Кристина
-                        </text>
-                    </div>
-                </nav>
-            </div>
+            <Header />
 
             <div className={"navigation__panel"}>
                 <nav>

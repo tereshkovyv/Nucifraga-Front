@@ -1,14 +1,11 @@
+import { Header } from '../../components/header/header';
 import './personalAccount.css';
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 
 const footerLogo = "img/images/imgPersonalAccount/LogoWhite.svg";
-const logoImg = "img/images/icons/Logo.svg";
-const iconPerson = "img/images/imgPersonalAccount/iconPerson.svg";
-const searchImg = "img/images/imgPersonalAccount/search.svg";
 const pointerBlackImg = "img/images/imgPersonalAccount/pointerBlack.png";
 const iconPersonMiniImg = "img/images/imgPersonalAccount/icoUserMini.png";
 const timeIconImg = "img/images/imgPersonalAccount/timeIcon.png";
-const pointerWhiteImg = "img/images/imgPersonalAccount/pointerWhite.svg";
 
 const PersonalAccount = () => {
 
@@ -146,49 +143,7 @@ const PersonalAccount = () => {
 
     return (
         <section className={"personal__account"}>
-            <div className={"personal__account__header"}>
-                <div>
-                    <img src={logoImg} alt="Logo"/>
-                </div>
-                <nav className={"personal__account__header__nav"}>
-                    <div className={"personal__account__header__nav__search"}>
-                        <input className={"personal__account__header__nav__search__text"}
-                               placeholder="Поиск по сайту"/>
-                        <a href={"#!"}>
-                            <img src={searchImg} alt={"Search"}/>
-                        </a>
-                    </div>
-                    <li>
-                        <a href="#!">Личный кабинет</a>
-                    </li>
-                    <div className={"personal__account__FL"}>
-                        <input type={"checkbox"} className={"personal__account__FL-checkbox"}
-                               id={"personal__account__FL__checkbox"}/>
-
-                        <label htmlFor={"personal__account__FL__checkbox"}>
-                            <img src={iconPerson} alt="iconPerson"/>
-                        </label>
-
-                        <div className={"personal__account__FL__more__info"}>
-                            <img src={pointerWhiteImg} alt={"pointerWhiteImg"}/>
-                            <nav>
-                                <div>
-                                    <a href="#!">Профиль</a>
-                                </div>
-                                <div>
-                                    <a href="#!">Уведомление</a>
-                                </div>
-                                <div>
-                                    <a href="#!">Выйти</a>
-                                </div>
-                            </nav>
-                        </div>
-                        <text>
-                            Сапкалова Кристина
-                        </text>
-                    </div>
-                </nav>
-            </div>
+            <Header />
             <div className={"personal__account__info"}>
                 <div className={"personal__account__info__title"}>
                     КАНБАН ДОСКА
