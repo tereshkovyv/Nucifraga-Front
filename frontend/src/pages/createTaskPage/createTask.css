@@ -145,7 +145,30 @@ textarea:focus{
     display: flex;
     align-items: center;
     margin-left: 28px;
-    padding-top: 30px;
+    padding-top: 14px;
+}
+
+.create__task__responsible__description h1,
+.create__task__deadline__description h1,
+.create__task__price__description h1 {
+    color: #424242;
+    font-family: Neue Machina, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.create__task__responsible__description h1 {
+    padding-right: 105px;
+}
+
+.create__task__deadline__description h1 {
+    padding-right: 110px;
+}
+
+.create__task__price__description h1 {
+    padding-right: 140px;
 }
 
 .create__task__footer {
@@ -220,13 +243,75 @@ textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.create__task__deadline__input {
     color: #424242;
     font-family: Neue Machina, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+.create__task__choice__main {
+    width: auto;
+    height: 59px;
+    border-radius: 10px;
+    border: 1px solid rgba(133, 133, 133, 0.76);
+    background: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 70px 10px 8px;
+}
+
+.create__task__choice__main__responsible {
+    width: 174px;
+    height: 38px;
+    background: #2E2BD0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create__task__choice__main__responsible text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding-left: 13px;
+    padding-right: 18px;
+}
+
+.create__task__choice__main__responsible label {
+    width: 12px;
+    height: 12px;
+
+    margin-right: 14px;
+}
+
+.create__task__choice__main__add__more {
+    padding-left: 12px;
+}
+
+.create__task__choice__main__add__more label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create__task__choice__main__add__more text {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding-left: 5px;
 }

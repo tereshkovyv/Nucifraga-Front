@@ -3,9 +3,10 @@ import { Header } from '../../components/header/header';
 import { Footnote } from '../../components/footnote/footnote';
 import { Footer } from '../../components/footer/footer';
 import { NavPanel } from "../../components/navPanel/navPanel";
-
 const clipImg = "img/images/ImgCreateTask/clip.svg";
 const rubleImg = "img/images/ImgCreateTask/ruble.svg";
+const xGray = "img/images/ImgCreateTask/xGray.svg";
+const xBlue = "img/images/ImgCreateTask/xBlue.svg";
 
 const CreateTask = () => {
     return (
@@ -49,19 +50,34 @@ const CreateTask = () => {
                 <div className={"create__task__order__description"}>
                     <div className={"create__task__responsible"}>
                         <div className={"create__task__responsible__description"}>
-                            <text>
+                            <h1>
                                 Отвественный
-                            </text>
-                            <div>
-                                OBJ
+                            </h1>
+                            <div className={"create__task__choice__main"}>
+                                <div class={"create__task__choice__main__responsible"}>
+                                    <text>
+                                        Светлана Иванова
+                                    </text>
+                                    <label>
+                                        <img src={xGray} alt={"xGray"}/>
+                                    </label>
+                                </div>
+                                <div class={"create__task__choice__main__add__more"}>
+                                    <label>
+                                        <img src={xBlue} alt={"xBlue"}/>
+                                        <text>
+                                            Добавить ещё
+                                        </text>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className={"create__task__deadline"}>
                         <div className={"create__task__deadline__description"}>
-                            <text>
+                            <h1>
                                 Крайний срок
-                            </text>
+                            </h1>
                             <div className={"create__task__deadline__input"}>
                                 <input type="date" id="start" name="trip-start"
                                        min="2023-01-01" max="2060-12-31" />
@@ -70,11 +86,11 @@ const CreateTask = () => {
                     </div>
                     <div className={"create__task__price"}>
                         <div className={"create__task__price__description"}>
-                            <text>
+                            <h1>
                                 Стоимость
-                            </text>
+                            </h1>
                             <div className={"create__task__price__input"}>
-                                <input type={"text"}/>
+                                <input type={"currency"}/>
                                 <img src={rubleImg} alt={"rubleImg"}/>
                             </div>
                         </div>
