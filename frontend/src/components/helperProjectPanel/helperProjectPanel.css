@@ -1,0 +1,90 @@
+.nav__list__projects {
+    display: flex;
+    padding: 73px 80px 58px 172px;
+}
+
+.nav__list__projects text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.create__task-btn {
+    width: 159px;
+    height: 56px;
+    border-radius: 15px;
+    background: #2E2BD0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create__task-btn a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav__list__projects__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 973px;
+    height: 56px;
+    border-radius: 15px;
+    background: #FFF;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__list__projects__search div {
+    width: 40px;
+    height: 40px;
+    background-color: #0b76ef;
+}
+
+.nav__list__projects__search__text {
+    width: inherit;
+    padding-right: 20px;
+
+    color: black;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav__list__projects__search input::-webkit-input-placeholder {
+    color: #747474;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.settings__block {
+    padding-left: 250px;
+}
+
+.settings-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 15px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

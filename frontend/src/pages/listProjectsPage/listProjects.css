@@ -5,214 +5,10 @@
     margin: 0 auto;
 }
 
-.personal__account__header {
-    width: initial;
-
-    padding: 19px 30px;
-
-    border-bottom: 1px solid white;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.personal__account__header__nav {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    list-style-type: none;
-}
-
-.personal__account__header__nav a {
-    color: #FFF;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.personal__account__header__nav__search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: rgba(210, 208, 208, 0.76);
-    width: 381px;
-    height: 59px;
-    border-radius: 40px;
-
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.personal__account__header__nav__search__text {
-    color: #FFF;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-input::-webkit-input-placeholder {
-    color: #FFF;
-}
-
-.personal__account__FL {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.personal__account__FL-checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.personal__account__FL-checkbox:checked ~ .personal__account__FL__more__info {
-    display: block;
-}
-
-.personal__account__FL__more__info {
-    position: absolute;
-    margin-top: 263px;
-    right: 20px;
-
-    display: none;
-    width: 335px;
-    height: 177px;
-    border-radius: 20px;
-    border: 1px solid #424242;
-    background: #FFF;
-}
-
-.personal__account__FL__more__info a {
-    color: #2E2BD0;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.personal__account__FL__more__info img {
-    position: relative;
-    left: 40px;
-    bottom: 10px;
-}
-
-.personal__account__FL__more__info nav {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    margin-left: 41px;
-}
-
-.navigation__panel {
-    position: absolute;
-    width: 68px;
-    height: 300px;
-
-    border-radius: 15px;
-    background: #FFF;
-
-    margin-left: 37px;
-    margin-top: 19px;
-}
-
-.navigation__panel nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-
-    padding: 12px;
-}
-
-.navigation__panel img {
-    width: 35px;
-}
-
-.nav__list__projects {
-    display: flex;
-    padding: 73px 435px 58px 172px;
-}
-
-.nav__list__projects text {
-    color: #FFF;
-    font-family: Neue Machina, serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 24px;
-}
-
-.create__task-btn {
-    width: 159px;
-    height: 56px;
-    border-radius: 15px;
-    background: #2E2BD0;
-    list-style-type: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.create__task-btn a {
-    color: #FFF;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
 .nav__list__projects {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav__list__projects__search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 973px;
-    height: 56px;
-    border-radius: 15px;
-    background: #FFF;
-
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.nav__list__projects__search__text {
-    width: inherit;
-    padding-right: 20px;
-
-    color: black;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.nav__list__projects__search input::-webkit-input-placeholder {
-    color: #747474;
-    font-family: Neue Machina, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
 }
 
 .list__projects__block {
@@ -360,7 +156,7 @@ td text {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 .list__projects__block__footer__noted {
@@ -383,7 +179,7 @@ td text {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 .list__projects__block__footnote {
@@ -415,7 +211,7 @@ td text {
 .list__projects__block__footnote__delete-btn {
     border-radius: 10px;
     background: #4200FF;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;

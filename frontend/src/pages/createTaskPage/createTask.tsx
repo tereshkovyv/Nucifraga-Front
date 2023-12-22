@@ -1,18 +1,17 @@
-import '../personalAccountPage/personalAccount.css';
-import '../../components/footer/footer.css';
-import '../../components/footnote/footnote.css';
 import './createTask.css';
 import { Header } from '../../components/header/header';
-import { InfoFootnote } from '../../components/footnote/infoFootnote';
-import {Footer} from '../../components/footer/footer';
+import { Footnote } from '../../components/footnote/footnote';
+import { Footer } from '../../components/footer/footer';
+import { NavPanel } from "../../components/navPanel/navPanel";
 
 const clipImg = "img/images/ImgCreateTask/clip.svg";
 const rubleImg = "img/images/ImgCreateTask/ruble.svg";
 
-export function CreateTask(){
+const CreateTask = () => {
     return (
         <section className={"personal__account"}>
             <Header />
+            <NavPanel />
 
             <div className={"create__task"}>
                 <nav className={"create__task__header"}>
@@ -92,8 +91,11 @@ export function CreateTask(){
                     </a>
                 </div>
             </div>
+
             <Footer />
-            <InfoFootnote />            
+            <Footnote />
         </section>
     );
 }
+
+export default CreateTask;

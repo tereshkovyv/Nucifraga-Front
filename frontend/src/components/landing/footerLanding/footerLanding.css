@@ -1,4 +1,4 @@
-.info__footer {
+.info__footer-land {
     max-width: 1920px;
     height: 450px;
     margin: 0 auto;
@@ -8,18 +8,18 @@
     border-radius: 2%;
 }
 
-.footer__container {
+.footer__container-land {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.footer__block {
+.footer__block-land {
     width: 298px;
     height: 395px;
 }
 
-.footer__block__links {
+.footer__block__links-land {
     width: 231px;
     height: 363px;
     display: flex;
@@ -27,8 +27,8 @@
     gap: 38px;
 }
 
-.footer__block__links text {
-    color: #56CCF2;
+.footer__block__links-land text {
+    color: #2F353F;
     font-family: Neue Machina, serif;
     font-size: 20px;
     font-style: normal;
@@ -37,8 +37,8 @@
     text-transform: lowercase;
 }
 
-.footer__block__links a {
-    color: #F2F2F2;
+.footer__block__links-land a {
+    color: #2E2BD0;
     font-family: Gilroy, serif;
     font-size: 20px;
     font-style: normal;
@@ -46,15 +46,15 @@
     line-height: normal;
 }
 
-.footer__block__links__mail {
+.footer__block__links__mail-land {
     display: flex;
     flex-direction: column;
     gap: 35px;
     padding-top: 100px;
 }
 
-.footer__block__link__gmail {
-    color: #FFF;
+.footer__block__link__gmail-land {
+    color: #2E2BD0;
     font-family: Gilroy, serif;
     font-size: 24px;
     font-style: normal;
@@ -63,7 +63,7 @@
     text-decoration-line: underline;
 }
 
-.footer__block__link__connect {
+.footer__block__link__connect-land {
     color: #FFF;
     font-family: Neue Machina, serif;
     font-size: 20px;
@@ -80,23 +80,23 @@
     height: 59px;
 }
 
-.footer__block__link__connect img {
+.footer__block__link__connect-land img {
     width: 24px;
     height: 24px;
 
     margin-left: 30px;
 }
 
-.footer__block__social__media {
+.footer__block__social__media-land {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__block__social__media div {
+.footer__block__social__media-land div {
     width: 60px;
     height: 60px;
     border-radius: 15px;
-    border: 1.125px solid #F2F2F2;
+    border: 1.125px solid #2E2BD0;
 
     display: flex;
     justify-content: center;

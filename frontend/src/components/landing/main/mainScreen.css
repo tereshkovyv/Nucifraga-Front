@@ -33,6 +33,10 @@
     text-transform: lowercase;
 }
 
+.header__nav img {
+    margin-left: 20px;
+}
+
 .header__nav ul {
     display: inline-flex;
     align-items: flex-start;

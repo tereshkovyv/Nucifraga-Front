@@ -1,0 +1,106 @@
+.personal__account__header {
+    width: initial;
+
+    padding: 19px 30px;
+
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal__account__header__nav {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.personal__account__header__nav a {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__header__nav__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(210, 208, 208, 0.76);
+    width: 381px;
+    height: 59px;
+    border-radius: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.personal__account__header__nav__search__text {
+    color: #FFF;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+input::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+.personal__account__FL {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.personal__account__FL-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.personal__account__FL-checkbox:checked ~ .personal__account__FL__more__info {
+    display: block;
+}
+
+.personal__account__FL__more__info {
+    position: absolute;
+    margin-top: 263px;
+    right: 20px;
+
+    display: none;
+    width: 335px;
+    height: 177px;
+    border-radius: 20px;
+    border: 1px solid #424242;
+    background: #FFF;
+}
+
+.personal__account__FL__more__info a {
+    color: #2E2BD0;
+    font-family: Neue Machina, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.personal__account__FL__more__info img {
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+
+.personal__account__FL__more__info nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: 41px;
+}

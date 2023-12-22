@@ -1,17 +1,17 @@
-.info__footnote {
+.infoFootnote {
     max-width: 1920px;
     margin: 0 auto;
     padding: 50px 20px;
 }
 
-.footnote {
+.footnote__landing {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.footnote text {
-    color: #FFF;
+.footnote__landing text {
+    color: rgba(47, 53, 63, 0.50);
     text-align: center;
     font-family: Gilroy, serif;
     font-size: 16px;

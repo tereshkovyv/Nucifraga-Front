@@ -3,6 +3,9 @@ import './mainScreenAdaptability.css';
 
 const logoImg = "img/images/icons/Logo.svg";
 const mottoImg = "img/images/ImgMainPage/Motto.svg";
+const buttonIcon = "/img/images/icons/ButtonIcon.svg";
+
+
 function MainScreen () {
     return (
         <section className={"mainScreen"} id={"mainPage"}>
@@ -16,7 +19,10 @@ function MainScreen () {
                             <li><a href="#infoAboutUs">Почему мы</a></li>
                             <li><a href="#infoPossibilities">Особенности</a></li>
                             <li><a href="#infoNewsAboutUs">О нас</a></li>
-                            <li><a href="/authentication/register" className={"header__nav-btn"}>Вход</a></li>
+                            <li><a href="/authentication/register" className={"header__nav-btn"}>
+                                Вход
+                                <img src={buttonIcon} alt={"buttonIcon"}/>
+                            </a></li>
                         </ul>
                     </nav>
                 </div>

@@ -58,7 +58,7 @@
     line-height: 24px;
 }
 
-input::-webkit-input-placeholder { 
+input::-webkit-input-placeholder {
     color: #FFF;
 }
 
@@ -135,8 +135,8 @@ input::-webkit-input-placeholder {
     font-weight: 800;
     line-height: 24px;
 
-    padding-top: 68px;
-    padding-bottom: 64px;
+    padding-top: 90px;
+    padding-bottom: 30px;
 
     display: flex;
     justify-content: center;
@@ -160,7 +160,7 @@ input::-webkit-input-placeholder {
     font-size: 30px;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 .personal__account__info__blocks__text {
@@ -170,7 +170,7 @@ input::-webkit-input-placeholder {
     background: #FFFFFF;
 
     padding-top: 17px;
-    padding-bottom: 40px;
+    padding-bottom: 17px;
 }
 
 .personal__account__info__blocks__task {
@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; 
+    line-height: 150%;
     text-decoration-line: underline;
 }
 
@@ -315,17 +315,86 @@ input::-webkit-input-placeholder {
 .pagination {
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    padding-top: 10px;
 }
 
-.pagination label {
+.pagination__arrow {
+    color: #524E4E;
+    font-family: Neue Machina, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.pagination__numbers,
+.pagination__quickly__nav {
     color: #4200FF;
     font-family: Neue Machina, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+
+    padding-right: 2px;
+    padding-left: 2px;
 }
+
+.pagination__quickly__nav {
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.add__task-btn {
+    margin: 5px 156px;
+}
+
+/*.personal__account__task-checkbox {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.personal__account__task-checkbox:checked ~ .personal__account__task__options {*/
+/*    display: block;*/
+/*}*/
+
+/*.personal__account__task__options {*/
+/*    position: absolute;*/
+/*    right: 20px;*/
+
+/*    display: none;*/
+/*    width: 144px;*/
+/*    height: 79px;*/
+/*    border-radius: 20px;*/
+/*    border: 1px solid #424242;*/
+/*    background: #FFF;*/
+/*}*/
+
+/*.personal__account__task__options a {*/
+/*    color: #424242;*/
+/*    font-family: Neue Machina, serif;*/
+/*    font-size: 16px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: 24px;*/
+/*}*/
+
+/*.personal__account__task__options img {*/
+/*    position: relative;*/
+/*    left: 40px;*/
+/*    bottom: 10px;*/
+/*}*/
+
+/*.personal__account__task__options nav {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin: 5px 13px;*/
+/*}*/
+
+/*.personal__account__info__text {*/
+
+/*}*/

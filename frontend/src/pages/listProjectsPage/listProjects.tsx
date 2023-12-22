@@ -1,18 +1,12 @@
 import './listProjects.css';
 import React from 'react';
 import { useState } from 'react';
-import '../../components/footer/footer.css';
-import '../../components/footnote/footnote.css';
 import { Header } from '../../components/header/header';
 import { Footer } from '../../components/footer/footer';
-import { InfoFootnote } from '../../components/footnote/infoFootnote';
+import { Footnote } from '../../components/footnote/footnote';
+import { NavPanel } from "../../components/navPanel/navPanel";
+import { HelperProjectPanel } from "../../components/helperProjectPanel/helperProjectPanel";
 
-const searchIconBlack = "img/images/imgListProjects/searchIcons.svg";
-const clipboardIcon = "img/images/imgListProjects/clipboardIcon.svg";
-const invoiceTransactionIcon = "img/images/imgListProjects/invoiceTransactionIcon.svg";
-const kanbanIcon = "img/images/imgListProjects/kanbanIcon.svg";
-const menuIcon = "img/images/imgListProjects/menuIcon.svg";
-const taskIcon = "img/images/imgListProjects/taskIcon.svg";
 const groupIcon = "img/images/imgListProjects/groupProfileUsersIcon.svg";
 const userIcon = "img/images/imgListProjects/userPersonProfileAvatarIcon.svg";
 
@@ -48,64 +42,30 @@ const ListProjects = () => {
 
     return (
         <section className={"list__projects"}>
-            <Header />
-
-            <div className={"navigation__panel"}>
-                <nav>
-                    <a href={"/createTask"}>
-                        <img src={menuIcon} alt={"menuIcon"}/>
-                    </a>
-                    <a href={"!#"}>
-                        <img src={taskIcon} alt={"taskIcon"}/>
-                    </a>
-                    <a href={"/personalAccount"}>
-                        <img src={kanbanIcon} alt={"kanbanIcon"}/>
-                    </a>
-                    <a href={"!#"}>
-                        <img src={invoiceTransactionIcon} alt={"invoiceTransactionIcon"}/>
-                    </a>
-                    <a href={"/listProjects"}>
-                        <img src={clipboardIcon} alt={"clipboardIcon"}/>
-                    </a>
-                </nav>
-            </div>
-
-            <div className={"nav__list__projects"}>
-                <text>
-                    Проекты
-                </text>
-                <div className={"create__task-btn"}>
-                    <a href="/createTask">Создать</a>
-                </div>
-                <div className={"nav__list__projects__search"}>
-                    <input className={"nav__list__projects__search__text"}
-                           placeholder="Поиск + теги"/>
-                    <a href={"#!"}>
-                        <img src={searchIconBlack} alt={"Search"}/>
-                    </a>
-                </div>
-            </div>
+            <Header/>
+            <NavPanel/>
+            <HelperProjectPanel/>
 
             <div className={"list__projects__block"}>
                 <table>
                     <thead>
-                        <tr>
-                            <th>
-                                <div className={"list__projects__block__name"}>
-                                    <input type={"checkbox"}/>
-                                    <text>Название</text>
-                                </div>
-                            </th>
-                            <th>
-                                <text>Участники</text>
-                            </th>
-                            <th>
-                                <text>Роль</text>
-                            </th>
-                            <th>
-                                <text>Теги</text>
-                            </th>
-                        </tr>
+                    <tr>
+                        <th>
+                            <div className={"list__projects__block__name"}>
+                                <input type={"checkbox"}/>
+                                <text>Название</text>
+                            </div>
+                        </th>
+                        <th>
+                            <text>Участники</text>
+                        </th>
+                        <th>
+                            <text>Роль</text>
+                        </th>
+                        <th>
+                            <text>Теги</text>
+                        </th>
+                    </tr>
                     </thead>
                     <tbody>
                     {getTaskPerBlock(tasks).map((task) => (
@@ -171,7 +131,7 @@ const ListProjects = () => {
 
                 <div className={"list__projects__block__footer"}>
                     <div className={"list__projects__block__footer__noted"}>
-                        <text>Отмечено: {currentPage}</text>
+                        <text>Отмечено: 1</text>
                     </div>
                     <div className={"list__projects__block__footer__total"}>
                         <text>Всего: {tasks.length}</text>
@@ -196,8 +156,9 @@ const ListProjects = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
-            <InfoFootnote />
+
+            <Footer/>
+            <Footnote/>
         </section>
     );
 }

@@ -1,0 +1,26 @@
+.navigation__panel {
+    position: absolute;
+    width: 68px;
+    height: 300px;
+
+    border-radius: 15px;
+    background: #FFF;
+
+    margin-left: 37px;
+    margin-top: 19px;
+}
+
+.navigation__panel nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding: 12px;
+}
+
+.navigation__panel img {
+    width: 35px;
+}

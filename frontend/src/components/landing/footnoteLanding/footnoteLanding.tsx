@@ -1,9 +1,9 @@
-import './footnote.css'
+import './footnoteLanding.css'
 
-export function InfoFootnote() {
+const FootnoteLanding = () => {
     return (
         <section className={"infoFootnote"}>
-            <div className={"footnote"}>
+            <div className={"footnote__landing"}>
                 <text>
                     Разработанно NuciFraga
                 </text>
@@ -17,3 +17,5 @@ export function InfoFootnote() {
         </section>
     );
 }
+
+export default FootnoteLanding;

@@ -12,7 +12,7 @@ export function Header() {
             <nav className={"personal__account__header__nav"}>
                 <div className={"personal__account__header__nav__search"}>
                     <input className={"personal__account__header__nav__search__text"}
-                        placeholder="Поиск по сайту" />
+                           placeholder="Поиск по сайту" />
                     <a href={"#!"}>
                         <img src={searchImg} alt={"Search"} />
                     </a>
@@ -22,7 +22,7 @@ export function Header() {
                 </li>
                 <div className={"personal__account__FL"}>
                     <input type={"checkbox"} className={"personal__account__FL-checkbox"}
-                        id={"personal__account__FL__checkbox"} />
+                           id={"personal__account__FL__checkbox"} />
 
                     <label htmlFor={"personal__account__FL__checkbox"}>
                         <img src={iconPerson} alt="iconPerson" />
