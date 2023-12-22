@@ -7,7 +7,9 @@ export function Header() {
     return (
         <div className={"personal__account__header"}>
             <div>
-                <img src={logoImg} alt="Logo" />
+                <a href={"/"}>
+                    <img src={logoImg} alt="Logo" />
+                </a>
             </div>
             <nav className={"personal__account__header__nav"}>
                 <div className={"personal__account__header__nav__search"}>

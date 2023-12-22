@@ -10,10 +10,10 @@ export function NavPanel() {
     return (
         <div className={"navigation__panel"}>
             <nav>
-                <a href={"/createTask"}>
+                <a href={"!#"}>
                     <img src={menuIcon} alt={"menuIcon"}/>
                 </a>
-                <a href={"!#"}>
+                <a href={"/createTask"}>
                     <img src={taskIcon} alt={"taskIcon"}/>
                 </a>
                 <a href={"/personalAccount"}>
