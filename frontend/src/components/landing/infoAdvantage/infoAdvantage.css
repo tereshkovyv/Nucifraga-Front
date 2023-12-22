@@ -47,7 +47,6 @@
 }
 
 .scroll__behavior label {
-    color: #2E2BD0;
     font-family: Neue Machina, serif;
     font-size: 32px;
     font-style: normal;
@@ -108,4 +107,12 @@
 .scroll__behavior ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 10px 10px #2E2BD0;
     border: solid 3px transparent;
+}
+
+.clicked text {
+    color: #2E2BD0;
+}
+
+.notClicked text {
+    color: rgba(47, 53, 63, 0.30);
 }

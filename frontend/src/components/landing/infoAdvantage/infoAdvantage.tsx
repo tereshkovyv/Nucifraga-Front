@@ -1,14 +1,40 @@
 import './infoAdvantage.css'
+import React from 'react';
+import { useState } from 'react';
 
 const InfoAdvantage = () => {
+    const [clickedButton, setClickedButton] = useState([
+            {id: 0, isClicked: true },
+            {id: 1, isClicked: false },
+            {id: 2, isClicked: false },
+            {id: 3, isClicked: false }
+        ]);
 
-    function doScroll(offset)
-    {
+    function doClick(id) {
+        let tempIsClicked = clickedButton.slice(0);
+
+        tempIsClicked.forEach((currentClick) => {
+            tempIsClicked[currentClick.id].isClicked = currentClick.id === id;
+        })
+
+        return tempIsClicked;
+    }
+
+    function doScroll(id, offset) {
         let scrollContainer = document.getElementById('scroll__container');
         if (scrollContainer !== null) {
             scrollContainer.scrollTop = offset;
+            setClickedButton(doClick(id));
         }
     }
+
+    // function a(id) {
+    //     clickedButton.forEach((currentClick) => {
+    //         console.log(currentClick.id === id);
+    //         return currentClick.id === id;
+    //     })
+    //     return false;
+    // }
 
     return (
         <section className={"infoAdvantage"}>
@@ -24,10 +50,30 @@ const InfoAdvantage = () => {
 
                 <div className={"scroll__behavior"}>
                     <nav>
-                        <label onClick={() => doScroll(0)}>Личный кабинет менеджера</label>
-                        <label onClick={() => doScroll(430)}>Личный кабинет заказчика</label>
-                        <label onClick={() => doScroll(860)}>Простота</label>
-                        <label onClick={() => doScroll(1290)}>Выгода</label>
+                        <label className={clickedButton[0].isClicked ? 'clicked' : 'notClicked'}
+                               onClick={() => doScroll(0, 0)}>
+                            <text>
+                                Личный кабинет менеджера
+                            </text>
+                        </label>
+                        <label className={clickedButton[1].isClicked ? 'clicked' : 'notClicked'}
+                               onClick={() => doScroll(1, 430)}>
+                            <text>
+                                Личный кабинет заказчика
+                            </text>
+                        </label>
+                        <label className={clickedButton[2].isClicked ? 'clicked' : 'notClicked'}
+                               onClick={() => doScroll(2, 860)}>
+                            <text>
+                                Простота
+                            </text>
+                        </label>
+                        <label className={clickedButton[3].isClicked ? 'clicked' : 'notClicked'}
+                               onClick={() => doScroll(3, 1290)}>
+                            <text>
+                                Выгода
+                            </text>
+                        </label>
                     </nav>
 
                     <scroll-container id={"scroll__container"}>
